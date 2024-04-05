@@ -1,3 +1,4 @@
+/*----Repetir productos-----*/
 if (document.getElementById('mini_producto')) {
     var tarjeta = document.getElementById('mini_producto').outerHTML;
     var tarjetas = '';
@@ -34,3 +35,24 @@ if (document.getElementById('menu_admin')) {
     window.scrollTo(0, 0);
     });
 };
+
+
+
+
+
+
+
+
+
+
+/*----poner la foto que el usuario elija (falta hacerla)-----*/
+document.getElementById('upload-image').addEventListener('change', function() {
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById('user-image-preview').setAttribute('src', e.target.result);
+        }
+        reader.readAsDataURL(file);
+    }
+  });
