@@ -14,8 +14,116 @@
 
     <!-- Contenido de la pagina -->
     <h1 style="margin: 25px;">Mantenedor de Bodega</h1>
+    <div class="col-sm-12 col-md-6">
 
-        FALTAAAAAAAAAAAAAAAA
+      <div class="container">
+        <section>
+          <form>
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="mb-3 fw-bold">
+                  <label for="id" class="form-label letra_blanca">Categoria</label>
+                  <input type="text" class="form-control registro_color" id="id" placeholder="Videojuegos" required>
+                  <div class="invalid-feedback">Debe llenar el campo Categoria</div>
+                </div>
+
+                <div class="mb-3 fw-bold">
+                  <label for="id" class="form-label letra_blanca">Nombre</label>
+                  <input type="text" class="form-control registro_color" id="id" placeholder="Diablo III" required>
+                  <div class="invalid-feedback">Debe llenar el campo Nombre</div>
+                </div>
+
+                <div class="mb-3 fw-bold">
+                  <label for="id" class="form-label letra_blanca">Cantidad</label>
+                  <input type="text" class="form-control registro_color" id="id" placeholder="5" required>
+                  <div class="invalid-feedback">Debe llenar el campo Cantidad</div>
+                </div>
+      
+                
+      
+                <div class="btn-group">
+                  <button type="update" class="btn boton-pag-registrarse" style="background-color: #a3a5c3;">Guardar</button>
+                  <button type="new" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Nuevo</button>
+                  <button type="delete" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Eliminar</button>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 text-right align-self-start"> 
+                <!-- Foto de perfil -->
+                <table>
+                  <tr>
+                    <td>
+                      <img id="user-image-preview" src="img/producto1.jpg" alt="" class="user-image" style="width: 400px;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="file" id="upload-image" class="form-control required" style="background-color: #7073a3">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+      
+    
+    caca
+
+          <!--Tabla Productos-->
+    <Section>
+      <div class="container pt-2" >
+        <section class="text-center" >
+          <br><br>
+          <table class="table table-bordered table-hover table-border"  style="background-color:#a7aad2; border-color: #9497c1;">
+            <thead > <!--cabeceras de la tabla-->
+              <!--Titulos de la parte de arriba de la tabla -->
+              <th scope="col" style="background-color:#a7aad2;"></th>
+              <th scope="col" style="background-color:#a7aad2;">ID</th>
+              <th scope="col" style="background-color:#a7aad2;">Categoría</th> 
+              <th scope="col" style="background-color:#a7aad2;">Nombre</th>
+              <th scope="col" style="background-color:#a7aad2;">Estado</th>
+              <th scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">Opciones</th>
+            </thead>
+            <tbody>
+              <tr> <!--tr:filas  td:columnas-->
+                  <td scope="row" style="background-color:#a7aad2;"></td>
+                  <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
+                  <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
+                  <td scope="col" style="background-color:#a7aad2;" >League of Legends</td>
+                  <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">Vendido</td>
+                  <td scope="col" style="background-color:#a7aad2;"><span style="color:blue; text-decoration: underline;">Eliminar</span></td>
+        
+              </tr>
+              <tr> <!--tr:filas  td:columnas-->
+                  <td scope="row" style="background-color:#a7aad2;"></td>
+                  <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
+                  <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
+                  <td scope="col" style="background-color:#a7aad2;" >League of Legends</td>
+                  <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">En Bodega</td>
+                  <td scope="col" style="background-color:#a7aad2;"><span style="color:blue; text-decoration: underline;">Eliminar</span></td>
+              </tr>
+              <tr> <!--tr:filas  td:columnas-->
+                <td scope="row" style="background-color:#a7aad2;">></td>
+                <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
+                <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
+                <td scope="col" style="background-color:#a7aad2;" >League of Legends</td>
+                <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">Entregado</td>
+                <td scope="col" style="background-color:#a7aad2;"><span style="color:blue; text-decoration: underline;">Eliminar</span></td>
+              </tr>
+              <tr> <!--tr:filas  td:columnas-->
+                  <td scope="row" style="background-color:#a7aad2;"></td>
+                  <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
+                  <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
+                  <td scope="col" style="background-color:#a7aad2;" >League of Legends</td>
+                  <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">Anulado</td>
+                  <td scope="col" style="background-color:#a7aad2;"><span style="color:blue; text-decoration: underline;">Eliminar</span></td>
+                </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+  </Section>
 
 
 

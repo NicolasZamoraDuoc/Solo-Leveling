@@ -165,3 +165,16 @@ th.carrito_color_tabla {
     max-width: 450px;
     margin-left: 200px;  
 }
+
+/*Subrayado cuando*/
+
+td.ver-detalle {
+    color: blue; 
+    text-decoration: none; 
+    cursor: pointer; 
+  }
+  td.ver-detalle:hover {
+    text-decoration: underline; 
+  }
+
+  
