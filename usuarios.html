@@ -12,15 +12,199 @@
     <!-- Cabecera con menú administrador -->
     <div id="menu_admin"></div>
 
+    <style>
+      .form-control {
+        max-width: 400px; /* Ancho máximo para los campos de texto */
+      }
+    </style>
+
+<br><br> <br> 
     <!-- Contenido de la pagina -->
-    <h1 style="margin: 25px;">Mantenedor de Usuario</h1>
+    <Section>
+      <div class="container" >
+        <section>
+          <h1 style="margin: px;">Mantenedor de Usuarios</h1>
+          <br>
+          <form class="row g-3 needs-validation" action="" novalidate> 
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
 
-        FALTAAAAAAAAAAAAAAAA
+
+          <!-- Campos de registro de usuario -->
+          <div class="mb-3 fw-bold">
+              <label for="id" class="form-label letra_blanca">ID</label>
+              <input type="text" class="form-control" id="id" placeholder="Ej: 58" required>
+              <div class="invalid-feedback">Debe llenar el campo ID</div>
+          </div>
+          
+          <!-- RUT -->
+          
+          <div class="mb-3 fw-bold">
+              <label for="rut" class="form-label letra_blanca">RUT</label>
+              <input type="text" class="form-control" id="rut" placeholder="Ej: 123456789" required>
+              <div class="invalid-feedback">Debe llenar el campo RUT</div>
+          </div>
+
+          <!-- Casillas -->
+          <br>
+
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label letra_blanca" for="inlineRadio1">Cliente</label>
+          </div>
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label letra_blanca" for="inlineRadio2">Usuario</label>
+          </div>
+
+          <!-- Nombres -->
+          <br><br>
+
+          <div class="mb-3 fw-bold">
+              <label for="nombres" class="form-label letra_blanca">Nombres</label>
+              <input type="text" class="form-control" id="nombres" placeholder="Ej: Juanito Perez" required>
+              <div class="invalid-feedback">Debe llenar el campo NOMBRES</div>
+          </div>
+
+          <!-- Apellidos -->
+
+          <div class="mb-3 fw-bold">
+              <label for="apellidos" class="form-label letra_blanca">Apellidos</label>
+              <input type="text" class="form-control" id="apellidos" placeholder="Ej: Pérez González" required>
+              <div class="invalid-feedback">Debe llenar el campo Apellidos</div>
+          </div>
 
 
+          <!-- Correo -->
+
+          <div class="mb-3 fw-bold">
+            <label for="apellidos" class="form-label letra_blanca">Correo</label>
+            <input type="text" class="form-control" id="correo" placeholder="Ej: th.leighton@duocuc.cl" required>
+            <div class="invalid-feedback">Debe llenar el campo Correo</div>
+          </div>
+
+          <!-- Dirección -->
+
+          <div class="fmb-3 fw-bold">
+            <label for="direccion" class="form-label letra_blanca">Dirección</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"> 
+            </textarea>
+            <div class="invalid-feedback">Debe llenar el campo Dirección</div>
+        </div> 
+
+        <br>
+
+         <!-- Check -->
+
+        <div class="form-check">
+          
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label letra_blanca" for="defaultCheck1">
+            Me gustaría suscribirme a la Tienda 'Solo Leveling' con una contribución mensual de $3.000. Además, me complacería recibir un descuento del 5% en todas mis compras como parte de esta suscripción
+          </label>
+
+        </div>
+         <!-- Constraseña -->
+         <br> 
+
+         <div class="mb-3 fw-bold d-flex flex-column align-items-start">
+          <label for="contraseña" class="form-label letra_blanca">Contraseña</label>
+          <div class="d-flex align-items-center">
+            <input type="text" class="form-control" id="contraseña" placeholder="123" required>
+            <button type="button" class="btn btn-primary ms-2">Generar  Contraseña</button>
+          </div>
+          <div class="invalid-feedback">Debe llenar el campo contraseña</div>
+        </div>
+
+        <!-- Botones -->
+        <br>
+        <div class="mb-3 fw-bold d-flex">
+          <!-- Botón "Guardar" -->
+          <button type="button" class="btn btn-primary me-2">Guardar</button>
+          <!-- Botón "Eliminar" -->
+          <button type="button" class="btn btn-danger me-2">Eliminar</button>
+          <!-- Botón "Nuevo" -->
+          <button type="button" class="btn btn-success">Nuevo</button>
+        </div>
+          </div>
+                <br><br>
 
 
+    
+                <!--Foto de perfil-->
+                <div class="col-sm-12 col-md-6">
+                  <table  >
+                      <tr>
+                          <td>
+                              <img id="user-image-preview" src="img/user.png" alt="" class="user-image" style="width: 250px;">
+                          </td>
+                      </tr>
+                      <tr>
+                        
+                          <td>
+                            <br>
+                              <input type="file" id="upload-image" class="form-control required" style="background-color: #7073a3">
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+  </Section>
 
+  <!--Tabla Productos-->
+  <Section>
+    <div class="container pt-2">
+      <section class="text-center">
+        
+        <table class="table table-bordered table-hover table-border" style="background-color:#a7aad2; border-color: #9497c1;">
+          <thead>
+            <tr>
+              <th scope="col" style="background-color:#a7aad2;">ID</th>
+              <th scope="col" style="background-color:#a7aad2;">TIPO DE USUARIO</th>
+              <th scope="col" style="background-color:#a7aad2;">RUT</th>
+              <th scope="col" style="background-color:#a7aad2;">NOMBRE</th>
+              <th scope="col" style="background-color:#a7aad2;">APELLIDOS</th>
+              <th scope="col" style="background-color:#a7aad2;">CORREO</th>
+              <th scope="col" style="background-color:#a7aad2;">DIRECCIÓN</th>
+              <th scope="col" style="background-color:#a7aad2;">CON SUSCRIPCIÓN</th>
+              <th scope="col" style="background-color:#a7aad2;">FOTO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Cliente</td>
+              <td>123456789-0</td>
+              <td>Juan</td>
+              <td>Pérez</td>
+              <td>juanperez@example.com</td>
+              <td>Calle Falsa 123</td>
+              <td>Sí</td>
+              <td><img src="ruta_de_la_imagen.jpg" alt="Foto" style="width: 50px;"></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Usuario</td>
+              <td>987654321-K</td>
+              <td>María</td>
+              <td>López</td>
+              <td>marialopez@example.com</td>
+              <td>Avenida Principal 456</td>
+              <td>No</td>
+              <td><img src="ruta_de_la_imagen.jpg" alt="Foto" style="width: 50px;"></td>
+            </tr>
+            <!-- Pueden agregar más filas con datos aleatorios según sea necesario -->
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </Section>
+      
 
     <br><br>
     <!-- Footer de la tienda -->

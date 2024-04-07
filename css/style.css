@@ -177,4 +177,13 @@ td.ver-detalle {
     text-decoration: underline; 
   }
 
+  .boton_eliminar {
+    background-color: #7073a3;
+    border-color: black; 
+    width: 100px;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    margin: auto ;
+}
   
