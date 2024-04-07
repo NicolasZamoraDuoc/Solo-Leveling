@@ -17,12 +17,12 @@ if (document.getElementById('menu_anonimo')) {
     window.scrollTo(0, 0);
     });
 };
-/*----barra de navegacion de CLIENTE (falta hacerla)-----*/
+/*----barra de navegacion de CLIENTE-----*/
 if (document.getElementById('menu_cliente')) {
     fetch('m_cliente.html').then(response => {
     return response.text();
     }).then(htmlContent => {
-    document.getElementById('menu_acliente').innerHTML = htmlContent;
+    document.getElementById('menu_cliente').innerHTML = htmlContent;
     window.scrollTo(0, 0);
     });
 };
@@ -36,16 +36,7 @@ if (document.getElementById('menu_admin')) {
     });
 };
 
-
-
-
-
-
-
-
-
-
-/*----poner la foto que el usuario elija (falta hacerla)-----*/
+/*----poner la foto que el usuario elija-----*/
 document.getElementById('upload-image').addEventListener('change', function() {
     const file = this.files[0];
     if (file) {
@@ -56,3 +47,25 @@ document.getElementById('upload-image').addEventListener('change', function() {
         reader.readAsDataURL(file);
     }
   });
+
+/*----Hacer que el usuario pueda colocar la foto que desee en su perfil -----*/
+(function () {
+    'use strict'
+  
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation')
+  
+      // Loop over them and prevent submission
+      Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    }, false)
+  }())
+
