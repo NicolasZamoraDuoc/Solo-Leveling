@@ -28,6 +28,7 @@ body {
     border-color: #2a2c47; 
     color:white;
     background-image: linear-gradient(to bottom, #2a2c47, #2a2c47, #0f0e1a);
+    text-align: center;
     
 }
 /*alinear el boton de buscar de anonimo junto al icono*/
@@ -109,16 +110,16 @@ button.btn svg {
 
 /*NOSOTROS*/
 .borde_nosotros{
-    vertical-align: top; width:20%;
-    border-top: 7px solid #0c0d1c;
-    border-bottom: 7px solid #0c0d1c; 
-    border-left: 7px solid #0c0d1c;
-    border-right: 7px solid #0c0d1c;
+    background-color: #5d6087;
+    border-radius: 15px; 
+    border: 2px solid #5d6087;
 }
 .boton_correo{
-    background-color:#9499df; 
-    border-color: #7073a3; 
+    background-color:#3d3f6a; 
+    border-color: #2a2c47; 
     color:white;
+    background-image: linear-gradient(to bottom, #2a2c47, #2a2c47, #0f0e1a);
+
 }
 
 /*REGISTRO*/
@@ -132,8 +133,10 @@ button.btn svg {
 .cuadro_login {
     border: 10px solid black;
     padding: 40px;
-    width: 500px;
-    margin: 0 auto; 
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    
 }
 .boton_ingresar {
     background-color: #7073a3;
@@ -173,11 +176,11 @@ td.ver-detalle {
     text-decoration: none; 
     cursor: pointer; 
   }
-  td.ver-detalle:hover {
+td.ver-detalle:hover {
     text-decoration: underline; 
   }
 
-  .boton_eliminar {
+.boton_eliminar {
     background-color: #7073a3;
     border-color: black; 
     width: 100px;
@@ -185,5 +188,13 @@ td.ver-detalle {
     justify-content: center; 
     align-items: center;
     margin: auto ;
+    text-align: center;
 }
-  
+
+/*Botones de ventas*/
+.botones-container button {
+    display: inline-block;
+    margin-right: 5px; /* Espacio entre los botones */
+}
+
+

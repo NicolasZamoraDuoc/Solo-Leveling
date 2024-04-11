@@ -34,7 +34,7 @@
           <!-- Campos de registro de usuario -->
           <div class="mb-3 fw-bold">
               <label for="id" class="form-label letra_blanca">ID</label>
-              <input type="text" class="form-control" id="id" placeholder="Ej: 58" required>
+              <input type="text" class="form-control registro_color" id="id" placeholder="Ej: 58" required>
               <div class="invalid-feedback">Debe llenar el campo ID</div>
           </div>
           
@@ -42,7 +42,7 @@
           
           <div class="mb-3 fw-bold">
               <label for="rut" class="form-label letra_blanca">RUT</label>
-              <input type="text" class="form-control" id="rut" placeholder="Ej: 123456789" required>
+              <input type="text" class="form-control registro_color" id="rut" placeholder="Ej: 123456789" required>
               <div class="invalid-feedback">Debe llenar el campo RUT</div>
           </div>
 
@@ -63,7 +63,7 @@
 
           <div class="mb-3 fw-bold">
               <label for="nombres" class="form-label letra_blanca">Nombres</label>
-              <input type="text" class="form-control" id="nombres" placeholder="Ej: Juanito Perez" required>
+              <input type="text" class="form-control registro_color" id="nombres" placeholder="Ej: Juanito Perez" required>
               <div class="invalid-feedback">Debe llenar el campo NOMBRES</div>
           </div>
 
@@ -71,7 +71,7 @@
 
           <div class="mb-3 fw-bold">
               <label for="apellidos" class="form-label letra_blanca">Apellidos</label>
-              <input type="text" class="form-control" id="apellidos" placeholder="Ej: Pérez González" required>
+              <input type="text" class="form-control registro_color" id="apellidos" placeholder="Ej: Pérez González" required>
               <div class="invalid-feedback">Debe llenar el campo Apellidos</div>
           </div>
 
@@ -80,7 +80,7 @@
 
           <div class="mb-3 fw-bold">
             <label for="apellidos" class="form-label letra_blanca">Correo</label>
-            <input type="text" class="form-control" id="correo" placeholder="Ej: th.leighton@duocuc.cl" required>
+            <input type="text" class="form-control registro_color" id="correo" placeholder="Ej: th.leighton@duocuc.cl" required>
             <div class="invalid-feedback">Debe llenar el campo Correo</div>
           </div>
 
@@ -88,11 +88,11 @@
 
           <div class="form-group mb-3">
             <label for="direccion" class="form-label letra_blanca">Dirección</label>
-            <textarea class="form-control" id="direccion" name="direccion" rows="3" placeholder="Ejemplo: Calle Principal, Ciudad, País" required></textarea>
+            <textarea class="form-control registro_color" id="direccion" name="direccion" rows="3" placeholder="Ejemplo: Calle Principal, Ciudad, País" required></textarea>
             <div id="alerta-direccion" class="invalid-feedback">Debe llenar el campo Correo.</div>
         </div> 
 
-        <br><br>
+        <br>
 
          <!-- Check -->
 
@@ -100,52 +100,45 @@
           
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <label class="form-check-label letra_blanca" for="defaultCheck1">
-            Me gustaría suscribirme a la Tienda 'Solo Leveling' con una contribución mensual de $3.000. Además, me complacería recibir un descuento del 5% en todas mis compras como parte de esta suscripción
+            Me gustaría suscribirme a la Tienda 'Solo Leveling' con una contribución mensual de $3.000. 
+            Además, me complacería recibir un descuento del 5% en todas mis compras como parte de esta suscripción
           </label>
 
         </div>
          <!-- Constraseña -->
          <br> 
-
          <div class="mb-3 fw-bold d-flex flex-column align-items-start">
           <label for="contraseña" class="form-label letra_blanca">Contraseña</label>
           <div class="d-flex align-items-center">
-            <input type="text" class="form-control" id="contraseña" placeholder="123" required>
+            <input type="text" class="form-control registro_color" id="contraseña" placeholder="123" required>
             <button type="button" class="btn btn-primary ms-2" style="background-color:#7073a3;">Generar  Contraseña</button>
           </div>
           <div class="invalid-feedback">Debe llenar el campo contraseña</div>
         </div>
-
-
-        <!-- Botones -->
-        <br>
-        <div class="btn-group">
-          <button type="update" class="btn boton-pag-registrarse" style="background-color: #a3a5c3;">Guardar</button>
-          <button type="update" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Agregar</button>
-          <button type="reset" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Eliminar</button>
-      </div>
           </div>
-                <br><br>
-
-
-    
-                <!--Foto de perfil-->
-                <div class="col-sm-12 col-md-6">
-                  <table  >
-                      <tr>
-                          <td>
-                              <img id="user-image-preview" src="img/user.png" alt="" class="user-image" style="width: 250px;">
-                          </td>
-                      </tr>
-                      <tr>
-                        
-                          <td>
-                            <br>
-                              <input type="file" id="upload-image" class="form-control required" style="background-color: #7073a3">
-                          </td>
-                      </tr>
-                  </table>
+              <br>
+              <!--Foto de perfil-->
+              <div class="col-sm-12 col-md-6">
+                <table>
+                    <tr>
+                        <td>
+                            <img id="user-image-preview" src="img/user.png" alt="" class="user-image" style="width: 400px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="file" id="upload-image" class="form-control required" style="background-color: #7073a3">
+                        </td>
+                    </tr>
+                </table>
               </div>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <!-- Botones -->
+              <div class="btn-group" style="width: 20px;">
+                <button type="update" class="btn boton-pag-registrarse" style="background-color: #a3a5c3;">Guardar</button>
+                <button type="update" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Agregar</button>
+                <button type="reset" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Eliminar</button>
+            </div>
               </div>
             </div>
           </form>
@@ -153,6 +146,7 @@
       </div>
   </Section>
 
+  &nbsp;
   <!--Tabla Productos-->
   <Section>
     <div class="container pt-2">
@@ -161,40 +155,40 @@
         <table class="table table-bordered table-hover table-border" style="background-color:#a7aad2; border-color: #9497c1;">
           <thead>
             <tr>
-              <th scope="col" style="background-color:#a7aad2;">ID</th>
-              <th scope="col" style="background-color:#a7aad2;">TIPO DE USUARIO</th>
-              <th scope="col" style="background-color:#a7aad2;">RUT</th>
-              <th scope="col" style="background-color:#a7aad2;">NOMBRE</th>
-              <th scope="col" style="background-color:#a7aad2;">APELLIDOS</th>
-              <th scope="col" style="background-color:#a7aad2;">CORREO</th>
-              <th scope="col" style="background-color:#a7aad2;">DIRECCIÓN</th>
-              <th scope="col" style="background-color:#a7aad2;">CON SUSCRIPCIÓN</th>
-              <th scope="col" style="background-color:#a7aad2;">FOTO</th>
+              <th scope="col" style="background-color:#7f82b1" class="text-end d-none d-lg-block d-lg-table-cell">ID</th>
+              <th scope="col" style="background-color:#7f82b1">Tipo de Usuario</th>
+              <th scope="col" style="background-color:#7f82b1">RUT</th>
+              <th scope="col" style="background-color:#7f82b1">Nombre</th>
+              <th scope="col" style="background-color:#7f82b1">Apellidos</th>
+              <th scope="col" style="background-color:#7f82b1" class="text-end d-none d-lg-block d-lg-table-cell">Correo</th>
+              <th scope="col" style="background-color:#7f82b1" class="text-end d-none d-lg-block d-lg-table-cell">Dirección</th>
+              <th scope="col" style="background-color:#7f82b1">Con Suscripción</th>
+              <th scope="col" style="background-color:#7f82b1" class="text-end d-none d-lg-block d-lg-table-cell">Foto</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>Cliente</td>
-              <td>123456789-0</td>
-              <td>Juan</td>
-              <td>Pérez</td>
-              <td>juanperez@example.com</td>
-              <td>Calle Falsa 123</td>
-              <td>Sí</td>
-              <td><img src="ruta_de_la_imagen.jpg" alt="Foto" style="width: 50px;"></td>
+              <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">1</td>
+              <td scope="col" style="background-color:#a7aad2;">Cliente</td>
+              <td scope="col" style="background-color:#a7aad2;">12345678-0</td>
+              <td scope="col" style="background-color:#a7aad2;">Juan</td>
+              <td scope="col" style="background-color:#a7aad2;">Pérez</td>
+              <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">juanperez@example.com</td>
+              <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">Calle Falsa 123</td>
+              <td scope="col" style="background-color:#a7aad2;">Sí</td>
+              <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell"><img src="img/foto_usuario.jpg" alt="Foto" style="width: 50px;"></td>
             </tr>
             <tr>
-              <td>2</td>
-              <td>Usuario</td>
-              <td>987654321-K</td>
-              <td>María</td>
-              <td>López</td>
-              <td>marialopez@example.com</td>
-              <td>Avenida Principal 456</td>
-              <td>No</td>
-              <td><img src="ruta_de_la_imagen.jpg" alt="Foto" style="width: 50px;"></td>
-            </tr>
+              <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">2</td>
+              <td scope="col" style="background-color:#a7aad2;">Usuario</td>
+              <td scope="col" style="background-color:#a7aad2;">98765432-K</td>
+              <td scope="col" style="background-color:#a7aad2;">María</td>
+              <td scope="col" style="background-color:#a7aad2;">López</td>
+              <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">marialopez@example.com</td>
+              <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">Avenida Principal 456</td>
+              <td scope="col" style="background-color:#a7aad2;">No</td>
+              <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell"><img src="img/perfil_usuario.webp" alt="Foto" style="width: 50px;"></td>
+            </tr> 
             <!-- Pueden agregar más filas con datos aleatorios según sea necesario -->
           </tbody>
         </table>

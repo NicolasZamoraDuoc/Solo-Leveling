@@ -11,70 +11,72 @@
 <body>
     <!-- Cabecera con menú administrador -->
     <div id="menu_admin"></div>
-
     <!-- Contenido de la pagina -->
- 
-
       <div class="container">
         <h1 style="margin: 25px;">Mantenedor de Bodega</h1>
         <div class="col-sm-12 col-md-6">
-        
         <section>
-          
           <form>
             <div class="row">
               <div class="col-sm-12 col-md-6">
                 <div class="mb-3 fw-bold">
                   <label for="id" class="form-label letra_blanca">Categoria</label>
-                  <input type="text" class="form-control registro_color" id="id" placeholder="Videojuegos" required>
+                  <select class="form-select registro_color" id="categoria">
+                    <option value="1">Ninguno</option>
+                    <option value="2">MOBA</option>
+                    <option value="3">Acción</option>
+                    <option value="4">Arcade</option>
+                    <option value="5">Deportes</option>
+                    <option value="6">Simulación</option>
+                    <option value="7">Musical</option>
+                    <option value="8">De mesa</option>
+                </select>
                   <div class="invalid-feedback">Debe llenar el campo Categoria</div>
                 </div>
-
                 <div class="mb-3 fw-bold">
                   <label for="id" class="form-label letra_blanca">Nombre</label>
-                  <input type="text" class="form-control registro_color" id="id" placeholder="Diablo III" required>
+                  <select class="form-select registro_color" id="categoria">
+                    <option value="1">Sin nombre</option>
+                    <option value="2">LOL</option>
+                    <option value="3">Diablo lll</option>
+                    <option value="4">Los sims 4</option>
+                    <option value="5">Fifa</option>
+                </select>
                   <div class="invalid-feedback">Debe llenar el campo Nombre</div>
                 </div>
-
                 <div class="mb-3 fw-bold">
                   <label for="id" class="form-label letra_blanca">Cantidad</label>
                   <input type="text" class="form-control registro_color" id="id" placeholder="5" required>
                   <div class="invalid-feedback">Debe llenar el campo Cantidad</div>
                 </div>
-      
-                
-      
-                <div class="btn-group">
-                  <button type="update" class="btn boton-pag-registrarse" style="background-color: #a3a5c3;">Guardar</button>
-                  <button type="new" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Nuevo</button>
-                  <button type="delete" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Eliminar</button>
-                </div>
               </div>
-              
-              <div class="col-sm-12 col-md-6 text-right align-self-start"> 
-                <!-- IMAGEN JUEGo -->
+              <!--Foto de perfil-->
+              <div class="col-sm-12 col-md-6" >
                 <table>
-                  <tr>
-                    <td>
-                      <img id="user-image-preview" src="img/producto1.jpg" alt="" class="user-image" style="width: 400px;">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input type="file" id="upload-image" class="form-control required" style="background-color: #7073a3">
-                    </td>
-                  </tr>
+                    <tr>
+                        <td>
+                            <img id="user-image-preview" src="img/producto1.jpg" alt="" class="user-image" style="max-width: 300px; margin-right: 220px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="file" id="upload-image" class="form-control required" style="background-color: #7073a3">
+                        </td>
+                    </tr>
                 </table>
-              </div>
             </div>
-          </form>
-        </section>
-      </div>
-      
-    
-    
-
-          <!--Tabla Productos-->
+            &nbsp;
+            <div class="btn-group" style="width: 20px;">
+              <button type="update" class="btn boton-pag-registrarse" style="background-color: #a3a5c3;">Guardar</button>
+              <button type="new" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Nuevo</button>
+              <button type="delete" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Eliminar</button>
+            </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+    <!--Tabla Productos-->
     <Section>
       <div class="container pt-2" >
         <section class="text-center" >
@@ -82,46 +84,53 @@
           <table class="table table-bordered table-hover table-border"  style="background-color:#a7aad2; border-color: #9497c1;">
             <thead > <!--cabeceras de la tabla-->
               <!--Titulos de la parte de arriba de la tabla -->
-              <th scope="col" style="background-color:#a7aad2;"></th>
-              <th scope="col" style="background-color:#a7aad2;">ID</th>
-              <th scope="col" style="background-color:#a7aad2;">Categoría</th> 
-              <th scope="col" style="background-color:#a7aad2;">Nombre</th>
-              <th scope="col" style="background-color:#a7aad2;">Estado</th>
-              <th scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">Opciones</th>
+              <th scope="col" style="background-color:#7f82b1;"></th>
+              <th scope="col" style="background-color:#7f82b1;">ID</th>
+              <th scope="col" style="background-color:#7f82b1;" class="d-none d-lg-block d-lg-table-cell">Categoría</th> 
+              <th scope="col" style="background-color:#7f82b1;">Nombre</th>
+              <th scope="col" style="background-color:#7f82b1;">Estado</th>
+              <th scope="col" style="background-color:#7f82b1;">Opciones</th>
             </thead>
             <tbody>
               <tr> <!--tr:filas  td:columnas-->
                   <td scope="row" style="background-color:#a7aad2;"></td>
                   <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
                   <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
-                  <td scope="col" style="background-color:#a7aad2;" >League of Legends</td>
-                  <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">Vendido</td>
-                  <td scope="col" style="background-color:#a7aad2;"><span style="color:blue; text-decoration: underline;">Eliminar</span></td>
-        
+                  <td scope="col" style="background-color:#a7aad2;">League of Legends</td>
+                  <td scope="col" style="background-color:#a7aad2;">Vendido</td>
+                  <td scope="col" style="background-color:#a7aad2;">
+                    <button type="delete" href="#" class="btn btn-primary btn-sm boton_buscar_anonimo_2">Eliminar</button>
+                  </td>
               </tr>
               <tr> <!--tr:filas  td:columnas-->
                   <td scope="row" style="background-color:#a7aad2;"></td>
                   <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
                   <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
                   <td scope="col" style="background-color:#a7aad2;" >League of Legends</td>
-                  <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">En Bodega</td>
-                  <td scope="col" style="background-color:#a7aad2;"><span style="color:blue; text-decoration: underline;">Eliminar</span></td>
+                  <td scope="col" style="background-color:#a7aad2;" >En Bodega</td>
+                  <td scope="col" style="background-color:#a7aad2;">
+                    <button type="delete" href="#" class="btn btn-primary btn-sm boton_buscar_anonimo_2">Eliminar</button>
+                  </td>
               </tr>
               <tr> <!--tr:filas  td:columnas-->
                 <td scope="row" style="background-color:#a7aad2;">></td>
                 <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
                 <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
                 <td scope="col" style="background-color:#a7aad2;" >League of Legends</td>
-                <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">Entregado</td>
-                <td scope="col" style="background-color:#a7aad2;"><span style="color:blue; text-decoration: underline;">Eliminar</span></td>
+                <td scope="col" style="background-color:#a7aad2;" >Entregado</td>
+                <td scope="col" style="background-color:#a7aad2;">
+                 <button type="delete" href="#" class="btn btn-primary btn-sm boton_buscar_anonimo_2">Eliminar</button>
+                </td>
               </tr>
               <tr> <!--tr:filas  td:columnas-->
                   <td scope="row" style="background-color:#a7aad2;"></td>
                   <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
                   <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
                   <td scope="col" style="background-color:#a7aad2;" >League of Legends</td>
-                  <td scope="col" style="background-color:#a7aad2;" class="text-end d-none d-lg-block d-lg-table-cell">Anulado</td>
-                  <td scope="col" style="background-color:#a7aad2;"><span style="color:blue; text-decoration: underline;">Eliminar</span></td>
+                  <td scope="col" style="background-color:#a7aad2;" >Anulado</td>
+                  <td scope="col" style="background-color:#a7aad2; text-align: center;">
+                    <button type="delete" href="#" class="btn btn-primary btn-sm boton_buscar_anonimo_2">Eliminar</button>
+                  </td>
                 </tr>
             </tbody>
           </table>
