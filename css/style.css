@@ -1,6 +1,6 @@
 body {
     background-color: #2a2c47;
-    background-image: linear-gradient(to right, #1a1c35, #59647e);
+    background-image: linear-gradient(to right, #1a1c35, #2b3346, #394664, #425175, #46526e, #454c5c);
     color: #5d6087;
 }
 
@@ -13,7 +13,7 @@ body {
 /*NAVEGADOR ANONIMO*/
 .nav_anonimo{
     background-color: #2a2c47;
-    background-image: linear-gradient(to right, #1a1c35, #59647e);
+    background-image: linear-gradient(to right, #1a1c35, #2b3346, #394664, #425175, #46526e, #454c5c);
     color: #5d6087;
 
 }
