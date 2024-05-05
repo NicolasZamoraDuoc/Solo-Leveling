@@ -17,7 +17,7 @@
     <Section>
         <div class="container" style="margin-right: px;">
           <section>
-            <h1 style="margin: 25px;">Mantenedor de productos</h1>
+            <h1 class="titulos" style="margin: 25px;">Mantenedor de productos</h1>
             <br>
             <form class="row g-3 needs-validation" action="" novalidate> 
               <div class="container-fluid">
@@ -27,14 +27,14 @@
                   <div class="col-sm-12 col-md-6">
 
                     <div class="mb-3 fw-bold">
-                        <label for="id" class="form-label letra_blanca">ID</label>
+                        <label for="id" class="form-label titulos_2">ID</label>
                         <input type="text" class="form-control registro_color" id="id" placeholder="AEFS1243" required>
                         <div class="invalid-feedback">Debe llenar el campo Nombres</div>
                     </div>
   
                     <div class="mb-3 fw-bold">
-                        <label for="categoria" class="form-label letra_blanca">Categoría</label>
-                        <select class="form-select registro_color" id="categoria">
+                        <label for="categoria" class="form-label titulos_2">Categoría</label>
+                        <select class="form-select registro_color" style="color:black"  id="categoria">
                             <option value="1">MOBA</option>
                             <option value="2">Acción</option>
                             <option value="3">Arcade</option>
@@ -47,30 +47,30 @@
                     </div>
   
                     <div class="mb-3 fw-bold">
-                      <label for="nombre" class="form-label letra_blanca">Nombre</label>
+                      <label for="nombre" class="form-label titulos_2">Nombre</label>
                       <input type="text" class="form-control registro_color" id="nombre" placeholder="LOL" required>
                       <div class="invalid-feedback">Debe llenar el campo Nombre</div>
                     </div>
   
                     <div class="mb-3 fw-bold">
-                      <label for="descripcion" class="form-label letra_blanca">Descripción</label>
+                      <label for="descripcion" class="form-label titulos_2">Descripción</label>
                       <textarea class="form-control registro_color" id="descripcion" rows="3" placeholder="Juego de disparos" required ></textarea>
-                      <div class="invalid-feedback letra_blanca">Debe llenar el campo Descripción</div>
+                      <div class="invalid-feedback titulos_2">Debe llenar el campo Descripción</div>
                     </div>
   
                     <div class="mb-3 fw-bold">
-                      <label for="precio" class="form-label letra_blanca">Precio</label>
+                      <label for="precio" class="form-label titulos_2">Precio</label>
                       <input class="form-control registro_color" id="precio" placeholder="$10.000" required>
                       <div class="invalid-feedback ">Debe llenar el campo Precio</div>
                     </div>
 
                     <div class="mb-3 fw-bold">
-                      <label for="descuento_sub" class="form-label letra_blanca">Descuento Subscriptor</label>
+                      <label for="descuento_sub" class="form-label titulos_2">Descuento Subscriptor</label>
                       <input class="form-control registro_color" id="descuento_sub" placeholder="5%" required>
                       <div class="invalid-feedback ">Debe llenar el campo Descuento Subscriptor</div>
                     </div>
                     <div class="mb-3 fw-bold">
-                      <label for="descuento_oferta" class="form-label letra_blanca">Descuento por Oferta</label>
+                      <label for="descuento_oferta" class="form-label titulos_2">Descuento por Oferta</label>
                       <input class="form-control registro_color" id="descuento_oferta" placeholder="10%" required>
                       <div class="invalid-feedback ">Debe llenar el campo Descuento por Oferta</div>
                     </div>
@@ -88,16 +88,16 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="file" id="upload-image" class="form-control required" style="background-color: #7073a3">
+                                <input type="file" id="upload-image" class="form-control boton_buscar_anonimo_2 required" >
                             </td>
                         </tr>
                     </table>
                   </div>
                   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                   <div class="btn-group" style="width: 20px;">
-                    <button type="update" class="btn boton-pag-registrarse" style="background-color: #a3a5c3;">Guardar</button>
-                    <button type="new" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Nuevo</button>
-                    <button type="delete" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Eliminar</button>
+                    <button type="update" class="btn boton_buscar_anonimo_2" >Guardar</button>
+                    <button type="new" class="btn boton_buscar_anonimo_2" >Nuevo</button>
+                    <button type="delete" class="btn boton_buscar_anonimo_2" >Eliminar</button>
                   </div>
                 </div>
               </div>
@@ -111,58 +111,58 @@
         <div class="container pt-2" >
           <section class="text-center" >
             <br><br>
-            <table class="table table-bordered table-hover table-border"  style="background-color:#a7aad2; border-color: #9497c1;">
+            <table class="table table-bordered table-hover table-border"  style="background-color:#d55674; border-color: #d55674;">
               <thead > <!--cabeceras de la tabla-->
                 <!--Titulos de la parte de arriba de la tabla -->
-                <th scope="col" style="background-color:#7f82b1;"></th>
-                <th scope="col" style="background-color:#7f82b1;">ID</th>
-                <th scope="col" style="background-color:#7f82b1;" class="d-none d-lg-block d-lg-table-cell">Categoría</th> 
-                <th scope="col" style="background-color:#7f82b1;">Nombre</th>
-                <th scope="col" style="background-color:#7f82b1;" class="d-none d-lg-block d-lg-table-cell">Descripción</th>
-                <th scope="col" style="background-color:#7f82b1;">Precio</th>
-                <th scope="col" style="background-color:#7f82b1;" class="d-none d-lg-block d-lg-table-cell">%Desc. Subscriptor</th>
-                <th scope="col" style="background-color:#7f82b1;" class="d-none d-lg-block d-lg-table-cell">%Desc. Oferta</th>
+                <th scope="col" style="background-color:#ef89a1;"></th>
+                <th scope="col" style="background-color:#ef89a1;">ID</th>
+                <th scope="col" style="background-color:#ef89a1;" class="d-none d-lg-block d-lg-table-cell">Categoría</th> 
+                <th scope="col" style="background-color:#ef89a1;">Nombre</th>
+                <th scope="col" style="background-color:#ef89a1;" class="d-none d-lg-block d-lg-table-cell">Descripción</th>
+                <th scope="col" style="background-color:#ef89a1;">Precio</th>
+                <th scope="col" style="background-color:#ef89a1;" class="d-none d-lg-block d-lg-table-cell">%Desc. Subscriptor</th>
+                <th scope="col" style="background-color:#ef89a1;" class="d-none d-lg-block d-lg-table-cell">%Desc. Oferta</th>
               </thead>
               <tbody>
                 <tr> <!--tr:filas  td:columnas-->
-                    <td scope="row" style="background-color:#a7aad2;"></td>
-                    <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
-                    <td scope="col" style="background-color:#a7aad2;"class="d-none d-lg-block d-lg-table-cell">MOBA</td>
-                    <td scope="col" style="background-color:#a7aad2;">League of Legends</td>
-                    <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">Juego de disparos</td>
-                    <td scope="col" style="background-color:#a7aad2;">$10.000</td>
-                    <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">5%</td>
-                    <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">2%</td>
+                    <td scope="row" style="background-color:#cb6e84;"></td>
+                    <td scope="row" style="background-color:#cb6e84;">AEFS1243 </td>
+                    <td scope="col" style="background-color:#cb6e84;"class="d-none d-lg-block d-lg-table-cell">MOBA</td>
+                    <td scope="col" style="background-color:#cb6e84;">League of Legends</td>
+                    <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">Juego de disparos</td>
+                    <td scope="col" style="background-color:#cb6e84;">$10.000</td>
+                    <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">5%</td>
+                    <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">2%</td>
                 </tr>
                 <tr> <!--tr:filas  td:columnas-->
-                    <td scope="row" style="background-color:#a7aad2;"></td>
-                    <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
-                    <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
-                    <td scope="col" style="background-color:#a7aad2;" >League of Legends</td>
-                    <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">Juego de disparos</td>
-                    <td scope="col" style="background-color:#a7aad2;">$10.000</td>
-                    <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">5%</td>
-                    <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">2%</td>
+                    <td scope="row" style="background-color:#cb6e84;"></td>
+                    <td scope="row" style="background-color:#cb6e84;">AEFS1243 </td>
+                    <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
+                    <td scope="col" style="background-color:#cb6e84;" >League of Legends</td>
+                    <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">Juego de disparos</td>
+                    <td scope="col" style="background-color:#cb6e84;">$10.000</td>
+                    <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">5%</td>
+                    <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">2%</td>
                 </tr>
                 <tr> <!--tr:filas  td:columnas-->
-                  <td scope="row" style="background-color:#a7aad2;">></td>
-                  <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
-                  <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
-                  <td scope="col" style="background-color:#a7aad2;" >League of Legends</td>
-                  <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">Juego de disparos</td>
-                  <td scope="col" style="background-color:#a7aad2;">$10.000</td>
-                  <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">5%</td>
-                  <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">2%</td>
+                  <td scope="row" style="background-color:#cb6e84;">></td>
+                  <td scope="row" style="background-color:#cb6e84;">AEFS1243 </td>
+                  <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
+                  <td scope="col" style="background-color:#cb6e84;" >League of Legends</td>
+                  <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">Juego de disparos</td>
+                  <td scope="col" style="background-color:#cb6e84;">$10.000</td>
+                  <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">5%</td>
+                  <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">2%</td>
                 </tr>
                 <tr> <!--tr:filas  td:columnas-->
-                    <td scope="row" style="background-color:#a7aad2;"></td>
-                    <td scope="row" style="background-color:#a7aad2;">AEFS1243 </td>
-                    <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
-                    <td scope="col" style="background-color:#a7aad2;" >League of Legends</td>
-                    <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">Juego de disparos</td>
-                    <td scope="col" style="background-color:#a7aad2;">$10.000</td>
-                    <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">5%</td>
-                    <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">2%</td>
+                    <td scope="row" style="background-color:#cb6e84;"></td>
+                    <td scope="row" style="background-color:#cb6e84;">AEFS1243 </td>
+                    <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">MOBA</td>
+                    <td scope="col" style="background-color:#cb6e84;" >League of Legends</td>
+                    <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">Juego de disparos</td>
+                    <td scope="col" style="background-color:#cb6e84;">$10.000</td>
+                    <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">5%</td>
+                    <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">2%</td>
                   </tr>
               </tbody>
             </table>

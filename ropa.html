@@ -13,36 +13,42 @@
     <!-- Contenido principal de la pagina -->
     <br>
     <div class="container">
-        <h1 class="text-center mb-4 fs-4 color_footer">¡¡Concursa por una prenda de vestir!!</h1>
-        <h1 class="text-center mb-4 fs-4 color_footer">Por compras superiores a $20.000 en productos ya estás participando!</h1>
+        <h1 class="text-center mb-4 fs-4 titulos">¡¡Concursa por una prenda de vestir!!</h1>
+        <h1 class="text-center mb-4 fs-4 titulos">Por compras superiores a $20.000 en productos ya estás participando!</h1>
         <div id="productos" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
     </div>
     <script>
-        fetch('https://fakestoreapi.com/products')
-        .then(response => response.json()) // Convertir la respuesta a JSON
-        .then(data => {
-        // Procesar los datos y mostrarlos en el HTML
-        const productosDiv = document.getElementById('productos');
-        data.forEach(producto => {
-            // Crear un elemento de tarjeta para cada producto
-            const productoElement = document.createElement('div');
-            productoElement.classList.add('col');
-            productoElement.innerHTML = `
-                <div class="card h-100 color_ropa"> <!-- Agrega la clase color_ropa aquí -->
-                    <img src="${producto.image}" class="card-img-top" alt="${producto.title}">
-                    <div class="card-body">
-                        <h5 class="card-title">${producto.title}</h5>
-                        <p class="card-text">Precio: $${producto.price}</p>
-                        <p class="card-text">Categoría: ${producto.category}</p>
-                        <p class="card-text">${producto.description}</p>
-                    </div>
-                </div>
-            `;
-            productosDiv.appendChild(productoElement);
-        });
-    })
-    .catch(error => console.error('Error al obtener los productos:', error));
-    </script>
+      fetch('https://fakestoreapi.com/products')
+      .then(response => response.json()) // Convertir la respuesta a JSON
+      .then(data => {
+          // Procesar los datos y mostrarlos en el HTML
+          const productosDiv = document.getElementById('productos');
+          data.forEach(producto => {
+              // Crear un elemento de tarjeta para cada producto
+              const productoElement = document.createElement('div');
+              productoElement.classList.add('col');
+              productoElement.innerHTML = `
+                  <div class="card h-100 titulos_2"> <!-- Agrega la clase color_ropa aquí -->
+                      <img src="${producto.image}" class="card-img-top " alt="${producto.title}">
+                      <div class="card-body">
+                          <h5 class="card-title">${producto.title}</h5>
+                          <p class="card-text">Precio: $${producto.price}</p>
+                          <p class="card-text">Categoría: ${producto.category}</p>
+                          <p class="card-text">${producto.description}</p>
+                      </div>
+                  </div>
+              `;
+              // Aplicar estilos de borde y sombra
+              productoElement.style.boxShadow = '0 10px 10px rgba(255, 105, 180, 0.5)';
+              productoElement.style.borderColor = 'rgba(255, 105, 180, 0.5)';
+              
+              // Agregar el elemento al contenedor
+              productosDiv.appendChild(productoElement);
+          });
+      })
+      .catch(error => console.error('Error al obtener los productos:', error));
+  </script>
+  
 
     <br><br>
     <!-- Footer de la tienda -->

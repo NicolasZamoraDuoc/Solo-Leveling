@@ -26,7 +26,7 @@ if (document.getElementById('menu_cliente')) {
     window.scrollTo(0, 0);
     });
 };
-/*----barra de navegacion de ADMINISTRADOR (falta hacerla)-----*/
+/*----barra de navegacion de ADMINISTRADOR-----*/
 if (document.getElementById('menu_admin')) {
     fetch('m_admin.html').then(response => {
     return response.text();

@@ -1,7 +1,8 @@
 body {
-    background-color: #2a2c47;
-    background-image: linear-gradient(to right, #1a1c35, #2b3346, #394664, #425175, #46526e, #454c5c);
-    color: #5d6087;
+    /* Fondo negro */
+    background-color: #000000;
+    /* Color de texto blanco */
+    color: #FFFFFF;
 }
 
 
@@ -11,23 +12,23 @@ body {
   }
 
 /*NAVEGADOR ANONIMO*/
-.nav_anonimo{
-    background-color: #2a2c47;
-    background-image: linear-gradient(to right, #1a1c35, #2b3346, #394664, #425175, #46526e, #454c5c);
-    color: #5d6087;
-
+.nav_anonimo {
+    background-image: linear-gradient(to right, white );
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+    border-bottom: 1px solid rgba(255, 105, 180, 0.5);
+    color: #FFFFFF;
 }
-.boton_buscar_anonimo{
-    background-color:#878ab1; 
-    border-color: #0c0d1c; 
-    color:white;
-    
+.boton_buscar_anonimo {
+    background-image: linear-gradient(to right, #e7c2c2, #e7c2c2);
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+    border-color: rgba(255, 105, 180, 0.5);
+    color: #FFFFFF;
 }
 .boton_buscar_anonimo_2{
-    background-color:#3d3f6a; 
-    border-color: #2a2c47; 
-    color:white;
-    background-image: linear-gradient(to bottom, #2a2c47, #2a2c47, #0f0e1a);
+    background-image: linear-gradient(to right, #ef89a1, #e7c2c2);
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+    border-color: rgba(255, 105, 180, 0.5);
+    color: #000000;
     text-align: center;
     
 }
@@ -67,19 +68,34 @@ button.btn svg {
     font-size: 20px;
 }
 
-.index_stock {
+.index_oferta {
     color: green;
     font-weight: bolder;
 }
 .letra_blanca{
     color: #fff;
 }
-.index_foto_fondo{
-    background-color: #2a2c47;
+.index_foto_fondo {
+    background-color: #000000;
+    border: 2px solid rgba(255, 105, 180, 0.5);
+    color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
 }
 .index_btn_comprar{
-   background-color:  #5d6196; border-color: #414478; color:black;
-   
+    background-image: linear-gradient(to right, #ef89a1, #e7c2c2);
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+    border-color: rgba(255, 105, 180, 0.5);
+    color: #000000;  
+}
+.titulos{
+    color:#ef89a1;
+}
+.titulos_2{
+    background-image: linear-gradient(to right, #000000, #000000);
+    color:#ba5f74;
+}
+.navbar-nav .nav-link {
+    color: #ba5f74 !important; 
 }
 
 /*FICHA*/
@@ -110,28 +126,29 @@ button.btn svg {
 
 /*NOSOTROS*/
 .borde_nosotros{
-    background-color: #5d6087;
+    background-color: #000000;
     border-radius: 15px; 
-    border: 2px solid #5d6087;
+    border: 3px solid rgba(255, 105, 180, 0.5);
+    
 }
 .boton_correo{
-    background-color:#3d3f6a; 
-    border-color: #2a2c47; 
-    color:white;
-    background-image: linear-gradient(to bottom, #2a2c47, #2a2c47, #0f0e1a);
+    background-image: linear-gradient(to right, #e7c2c2, #e7c2c2);
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+    border-color: rgba(255, 105, 180, 0.5);
+    color: #FFFFFF;
 
 }
 
 /*REGISTRO*/
 .registro_color{
-    background-color: #7073a3;
-    background-image: #7073a3;
+    background-color: #e7c2c2;
+    background-image: linear-gradient(to right, #e7c2c2, #e7c2c2);
     color:white;
 }
 
 /*INGRESAR*/
 .cuadro_login {
-    border: 10px solid black;
+    border: 10px solid rgba(255, 105, 180, 0.5);
     padding: 40px;
     max-width: 500px;
     margin: 0 auto;
@@ -139,13 +156,16 @@ button.btn svg {
     
 }
 .boton_ingresar {
-    background-color: #7073a3;
-    border-color: black; 
+    background-image: linear-gradient(to right, #ef89a1, #e7c2c2);
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+    border-color: rgba(255, 105, 180, 0.5);
+    color: black; 
     width: 200px;
     margin: auto;
     text-align: center;
     justify-content: center; 
     align-items: center;
+    
 }
 
 /*Carrito de compras*/
@@ -154,7 +174,7 @@ th.carrito_color_tabla {
 }
 
 .color_footer{
-    color:#a7aad2;
+    color:rgba(255, 105, 180, 0.5);
 }
 
 .color_ropa {
@@ -196,5 +216,3 @@ td.ver-detalle:hover {
     display: inline-block;
     margin-right: 5px; /* Espacio entre los botones */
 }
-
-

@@ -23,7 +23,7 @@
     <Section>
       <div class="container" >
         <section>
-          <h1 style="margin: px;">Mantenedor de Usuarios</h1>
+          <h1 class="titulos" style="margin: px;">Mantenedor de Usuarios</h1>
           <br>
           <form class="row g-3 needs-validation" action="" novalidate> 
             <div class="container-fluid">
@@ -33,7 +33,7 @@
 
           <!-- Campos de registro de usuario -->
           <div class="mb-3 fw-bold">
-              <label for="id" class="form-label letra_blanca">ID</label>
+              <label for="id" class="form-label titulos_2">ID</label>
               <input type="text" class="form-control registro_color" id="id" placeholder="Ej: 58" required>
               <div class="invalid-feedback">Debe llenar el campo ID</div>
           </div>
@@ -41,7 +41,7 @@
           <!-- RUT -->
           
           <div class="mb-3 fw-bold">
-              <label for="rut" class="form-label letra_blanca">RUT</label>
+              <label for="rut" class="form-label titulos_2">RUT</label>
               <input type="text" class="form-control registro_color" id="rut" placeholder="Ej: 123456789" required>
               <div class="invalid-feedback">Debe llenar el campo RUT</div>
           </div>
@@ -51,18 +51,18 @@
 
           <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label letra_blanca" for="inlineRadio1">Cliente</label>
+              <label class="form-check-label titulos_2" for="inlineRadio1">Cliente</label>
           </div>
           <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-              <label class="form-check-label letra_blanca" for="inlineRadio2">Usuario</label>
+              <label class="form-check-label titulos_2" for="inlineRadio2">Usuario</label>
           </div>
 
           <!-- Nombres -->
           <br><br>
 
           <div class="mb-3 fw-bold">
-              <label for="nombres" class="form-label letra_blanca">Nombres</label>
+              <label for="nombres" class="form-label titulos_2">Nombres</label>
               <input type="text" class="form-control registro_color" id="nombres" placeholder="Ej: Juanito Perez" required>
               <div class="invalid-feedback">Debe llenar el campo NOMBRES</div>
           </div>
@@ -70,7 +70,7 @@
           <!-- Apellidos -->
 
           <div class="mb-3 fw-bold">
-              <label for="apellidos" class="form-label letra_blanca">Apellidos</label>
+              <label for="apellidos" class="form-label titulos_2">Apellidos</label>
               <input type="text" class="form-control registro_color" id="apellidos" placeholder="Ej: Pérez González" required>
               <div class="invalid-feedback">Debe llenar el campo Apellidos</div>
           </div>
@@ -79,7 +79,7 @@
           <!-- Correo -->
 
           <div class="mb-3 fw-bold">
-            <label for="apellidos" class="form-label letra_blanca">Correo</label>
+            <label for="apellidos" class="form-label titulos_2">Correo</label>
             <input type="text" class="form-control registro_color" id="correo" placeholder="Ej: th.leighton@duocuc.cl" required>
             <div class="invalid-feedback">Debe llenar el campo Correo</div>
           </div>
@@ -87,7 +87,7 @@
           <!-- Dirección -->
 
           <div class="form-group mb-3">
-            <label for="direccion" class="form-label letra_blanca">Dirección</label>
+            <label for="direccion" class="form-label titulos_2">Dirección</label>
             <textarea class="form-control registro_color" id="direccion" name="direccion" rows="3" placeholder="Ejemplo: Calle Principal, Ciudad, País" required></textarea>
             <div id="alerta-direccion" class="invalid-feedback">Debe llenar el campo Correo.</div>
         </div> 
@@ -99,7 +99,7 @@
         <div class="form-check">
           
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label class="form-check-label letra_blanca" for="defaultCheck1">
+          <label class="form-check-label titulos_2" for="defaultCheck1">
             Me gustaría suscribirme a la Tienda 'Solo Leveling' con una contribución mensual de $3.000. 
             Además, me complacería recibir un descuento del 5% en todas mis compras como parte de esta subscripción
           </label>
@@ -108,10 +108,10 @@
          <!-- Constraseña -->
          <br> 
          <div class="mb-3 fw-bold d-flex flex-column align-items-start">
-          <label for="contraseña" class="form-label letra_blanca">Contraseña</label>
+          <label for="contraseña" class="form-label titulos_2">Contraseña</label>
           <div class="d-flex align-items-center">
             <input type="text" class="form-control registro_color" id="contraseña" placeholder="123" required>
-            <button type="button" class="btn btn-primary ms-2" style="background-color:#7073a3;">Generar  Contraseña</button>
+            <button type="button" class="btn boton_buscar_anonimo_2 btn-primary ms-2">Generar  Contraseña</button>
           </div>
           <div class="invalid-feedback">Debe llenar el campo contraseña</div>
         </div>
@@ -128,7 +128,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="file" id="upload-image" class="form-control required" style="background-color: #7073a3">
+                            <input type="file" id="upload-image" class="form-control boton_buscar_anonimo_2 required">
                         </td>
                     </tr>
                 </table>
@@ -136,9 +136,9 @@
               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
               <!-- Botones -->
               <div class="btn-group" style="width: 20px;">
-                <button type="update" class="btn boton-pag-registrarse" style="background-color: #a3a5c3;">Guardar</button>
-                <button type="update" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Agregar</button>
-                <button type="reset" class="btn boton-pag-registrarse" style="background-color:#7073a3;">Eliminar</button>
+                <button type="update" class="btn boton_buscar_anonimo_2">Guardar</button>
+                <button type="update" class="btn boton_buscar_anonimo_2" >Agregar</button>
+                <button type="reset" class="btn boton_buscar_anonimo_2">Eliminar</button>
             </div>
               </div>
             </div>
@@ -153,42 +153,42 @@
     <div class="container pt-2">
       <section class="text-center">
         
-        <table class="table table-bordered table-hover table-border" style="background-color:#a7aad2; border-color: #9497c1;">
+        <table class="table table-bordered table-hover table-border" style="background-color:#d55674; border-color: #d55674;">
           <thead>
             <tr>
-              <th scope="col" style="background-color:#7f82b1" class="d-none d-lg-block d-lg-table-cell">ID</th>
-              <th scope="col" style="background-color:#7f82b1">Tipo de Usuario</th>
-              <th scope="col" style="background-color:#7f82b1">RUT</th>
-              <th scope="col" style="background-color:#7f82b1">Nombre</th>
-              <th scope="col" style="background-color:#7f82b1">Apellidos</th>
-              <th scope="col" style="background-color:#7f82b1" class="d-none d-lg-block d-lg-table-cell">Correo</th>
-              <th scope="col" style="background-color:#7f82b1" class="d-none d-lg-block d-lg-table-cell">Dirección</th>
-              <th scope="col" style="background-color:#7f82b1">Con Subscripción</th>
-              <th scope="col" style="background-color:#7f82b1" class="d-none d-lg-block d-lg-table-cell">Foto</th>
+              <th scope="col" style="background-color:#ef89a1" class="d-none d-lg-block d-lg-table-cell">ID</th>
+              <th scope="col" style="background-color:#ef89a1">Tipo de Usuario</th>
+              <th scope="col" style="background-color:#ef89a1">RUT</th>
+              <th scope="col" style="background-color:#ef89a1">Nombre</th>
+              <th scope="col" style="background-color:#ef89a1">Apellidos</th>
+              <th scope="col" style="background-color:#ef89a1" class="d-none d-lg-block d-lg-table-cell">Correo</th>
+              <th scope="col" style="background-color:#ef89a1" class="d-none d-lg-block d-lg-table-cell">Dirección</th>
+              <th scope="col" style="background-color:#ef89a1">Con Subscripción</th>
+              <th scope="col" style="background-color:#ef89a1" class="d-none d-lg-block d-lg-table-cell">Foto</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">1</td>
-              <td scope="col" style="background-color:#a7aad2;">Cliente</td>
-              <td scope="col" style="background-color:#a7aad2;">12345678-0</td>
-              <td scope="col" style="background-color:#a7aad2;">Juan</td>
-              <td scope="col" style="background-color:#a7aad2;">Pérez</td>
-              <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">juanperez@example.com</td>
-              <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">Calle Falsa 123</td>
-              <td scope="col" style="background-color:#a7aad2;">Sí</td>
-              <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell"><img src="img/foto_usuario.jpg" alt="Foto" style="width: 50px;"></td>
+              <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">1</td>
+              <td scope="col" style="background-color:#cb6e84;">Cliente</td>
+              <td scope="col" style="background-color:#cb6e84;">12345678-0</td>
+              <td scope="col" style="background-color:#cb6e84;">Juan</td>
+              <td scope="col" style="background-color:#cb6e84;">Pérez</td>
+              <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">juanperez@example.com</td>
+              <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">Calle Falsa 123</td>
+              <td scope="col" style="background-color:#cb6e84;">Sí</td>
+              <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell"><img src="img/foto_usuario.jpg" alt="Foto" style="width: 50px;"></td>
             </tr>
             <tr>
-              <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">2</td>
-              <td scope="col" style="background-color:#a7aad2;">Usuario</td>
-              <td scope="col" style="background-color:#a7aad2;">98765432-K</td>
-              <td scope="col" style="background-color:#a7aad2;">María</td>
-              <td scope="col" style="background-color:#a7aad2;">López</td>
-              <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">marialopez@example.com</td>
-              <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell">Avenida Principal 456</td>
-              <td scope="col" style="background-color:#a7aad2;">No</td>
-              <td scope="col" style="background-color:#a7aad2;" class="d-none d-lg-block d-lg-table-cell"><img src="img/perfil_usuario.webp" alt="Foto" style="width: 50px;"></td>
+              <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">2</td>
+              <td scope="col" style="background-color:#cb6e84;">Usuario</td>
+              <td scope="col" style="background-color:#cb6e84;">98765432-K</td>
+              <td scope="col" style="background-color:#cb6e84;">María</td>
+              <td scope="col" style="background-color:#cb6e84;">López</td>
+              <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">marialopez@example.com</td>
+              <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell">Avenida Principal 456</td>
+              <td scope="col" style="background-color:#cb6e84;">No</td>
+              <td scope="col" style="background-color:#cb6e84;" class="d-none d-lg-block d-lg-table-cell"><img src="img/perfil_usuario.webp" alt="Foto" style="width: 50px;"></td>
             </tr> 
             <!-- Pueden agregar más filas con datos aleatorios según sea necesario -->
           </tbody>
