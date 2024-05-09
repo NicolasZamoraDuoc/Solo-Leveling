@@ -216,3 +216,6 @@ td.ver-detalle:hover {
     display: inline-block;
     margin-right: 5px; /* Espacio entre los botones */
 }
+.error-text {
+    color: red;
+}
