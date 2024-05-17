@@ -89,6 +89,12 @@ $(document).ready(function() {
         },
       }, // --> Fin de reglas
       messages: {
+
+        id: {
+          required: "El ID es un campo requerido",
+
+        },
+        
         rut: {
           required: "El RUT es un campo requerido",
           rutChileno: "El RUT no es válido (escriba sin puntos y con guión)"

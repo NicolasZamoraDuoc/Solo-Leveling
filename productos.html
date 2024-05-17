@@ -19,7 +19,7 @@
           <section>
             <h1 class="titulos" style="margin: 25px;">Mantenedor de productos</h1>
             <br>
-            <form class="row g-3 needs-validation" action="" novalidate> 
+            <form id="productos" class="row g-3 needs-validation" action="" novalidate> 
               <div class="container-fluid">
                 <div class="row">
   
@@ -27,10 +27,10 @@
                   <div class="col-sm-12 col-md-6">
 
                     <div class="mb-3 fw-bold">
-                        <label for="id" class="form-label titulos_2">ID</label>
-                        <input type="text" class="form-control registro_color" id="id" placeholder="AEFS1243" required>
-                        <div class="invalid-feedback">Debe llenar el campo Nombres</div>
-                    </div>
+                      <label for="id" class="form-label titulos_2">ID</label>
+                      <input type="text" class="form-control registro_color" id="id" name="id" placeholder="Ej: 58" required>
+                      
+                  </div>
   
                     <div class="mb-3 fw-bold">
                         <label for="categoria" class="form-label titulos_2">Categoría</label>
@@ -43,37 +43,49 @@
                             <option value="3">Musical</option>
                             <option value="3">De mesa</option>
                         </select>
-                        <div class="invalid-feedback">Debe seleccionar una opción para categoría</div>
+                        
                     </div>
   
-                    <div class="mb-3 fw-bold">
-                      <label for="nombre" class="form-label titulos_2">Nombre</label>
-                      <input type="text" class="form-control registro_color" id="nombre" placeholder="LOL" required>
-                      <div class="invalid-feedback">Debe llenar el campo Nombre</div>
+                    <!-- Nombres -->
+
+                    <div class="form-group mb-3 fw-bold">
+                      <label for="nombres" class=" titulos_2">Nombres</label>
+                      <input type="text" class="form-control registro_color" id="nombres" name="nombres" 
+                      placeholder="Ej: Juan Pablo" value=""/>
                     </div>
   
+                    <!-- Descripción -->
+
                     <div class="mb-3 fw-bold">
                       <label for="descripcion" class="form-label titulos_2">Descripción</label>
-                      <textarea class="form-control registro_color" id="descripcion" rows="3" placeholder="Juego de disparos" required ></textarea>
+                      <textarea class="form-control registro_color" id="descripcion" name="descripcion" rows="3" placeholder="Juego de disparos" required ></textarea>
                       <div class="invalid-feedback titulos_2">Debe llenar el campo Descripción</div>
                     </div>
+
+                    <!-- Precio -->
   
                     <div class="mb-3 fw-bold">
                       <label for="precio" class="form-label titulos_2">Precio</label>
-                      <input class="form-control registro_color" id="precio" placeholder="$10.000" required>
-                      <div class="invalid-feedback ">Debe llenar el campo Precio</div>
+                      <input class="form-control registro_color" id="precio" name="precio" placeholder="$10.000" required>
+                      
                     </div>
 
+
+                    <!-- Descuento subscriptor -->
+
+
                     <div class="mb-3 fw-bold">
-                      <label for="descuento_sub" class="form-label titulos_2">Descuento Subscriptor</label>
-                      <input class="form-control registro_color" id="descuento_sub" placeholder="5%" required>
-                      <div class="invalid-feedback ">Debe llenar el campo Descuento Subscriptor</div>
+                      <label for="descuento_subscriptor" class="form-label titulos_2">Descuento Subscriptor</label>
+                      <input class="form-control registro_color" id="descuento_subscriptor" name="descuento_subscriptor" placeholder="5%" required>
                     </div>
+
+                    <!-- Descuento por oferta -->
+
                     <div class="mb-3 fw-bold">
                       <label for="descuento_oferta" class="form-label titulos_2">Descuento por Oferta</label>
-                      <input class="form-control registro_color" id="descuento_oferta" placeholder="10%" required>
-                      <div class="invalid-feedback ">Debe llenar el campo Descuento por Oferta</div>
-                    </div>
+                      <input class="form-control registro_color" id="descuento_oferta" name= "descuento_oferta" placeholder="10%" required>
+                      </div>
+
                   </div>
                   
                   <br><br>
@@ -209,6 +221,19 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <!-- 1. Script de Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- 2. Script de JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- 3. Script de JQuery Validate (usa el Script de JQuery anterior) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- 4. Mi Script de Validadores (usa el Script de JQuery y de JQuery Validate anteriores) -->
+    
+    <script src="js/script.js"></script>
+    <script src="js/productos.js"></script>
+
 </body>
 </html>
