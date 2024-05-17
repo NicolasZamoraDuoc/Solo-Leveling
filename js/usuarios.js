@@ -58,7 +58,7 @@ $(document).ready(function() {
 
         id: {
             required: true,
-            minlength: 5,
+            minlength: 2,
             maxlength: 15,
           },
 
@@ -92,7 +92,7 @@ $(document).ready(function() {
 
         id: {
           required: "El ID es un campo requerido",
-
+          minlength: "Ingrese minimo 2 carácteres"
         },
         
         rut: {
