@@ -122,6 +122,7 @@ button.btn svg {
 .foto_ficha {
     height: 450px;
     margin-right: 50px;
+    font-weight: bolder;
 }
 
 /*NOSOTROS*/
@@ -143,7 +144,7 @@ button.btn svg {
 .registro_color{
     background-color: #e7c2c2;
     background-image: linear-gradient(to right, #e7c2c2, #e7c2c2);
-    color:white;
+    color:black;
 }
 
 /*INGRESAR*/
@@ -218,4 +219,27 @@ td.ver-detalle:hover {
 }
 .error-text {
     color: red;
+}
+.btn-primary {
+    border:  transparent; /* Borde inicial transparente */
+}
+.btn-primary:hover {
+    outline: none; /* Sin borde azul al enfocar */
+    border: transparent; /* Borde transparente al enfocar o pasar el ratón */
+    background-color: #0056b3; /* Cambia el color de fondo si es necesario */
+}
+.boton_ver_detalle{
+    background-image: linear-gradient(to right, #d8b0b8, #d0a5a5);
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.5);
+    border-color: rgba(255, 105, 180, 0.5);
+    color: #000000;
+    text-align: center;
+    
+}
+.boton_ropa{
+    background-image: linear-gradient(to right, #ff7f7f, #ff5454);
+    box-shadow: 0 2px 4px rgba(255, 105, 105, 0.5);
+    border-color: rgba(255, 105, 105, 0.5);
+    color: #000000;
+    text-align: center;
 }

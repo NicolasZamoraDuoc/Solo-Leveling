@@ -23,36 +23,26 @@ $(document).ready(function() {
       rules: {
         categoria: {
           required: true,
-          selectCheck: "1"  // Validar que no sea la opción predeterminada "1"
         },
         nombre: {
           required: true,
-          selectCheck: "1"  // Validar que no sea la opción predeterminada "1"
         },
         cantidad: {
           required: true,
-          digits: true
+          number: true
         },
-        'image-bodega': {
-          required: true
-        }
       },
       messages: {
         categoria: {
-          required: "El campo Categoría es obligatorio",
-          selectCheck: "Debe seleccionar una categoría válida"
+          required: "Debe seleccionar una categoría válida",
         },
         nombre: {
-          required: "El campo Nombre es obligatorio",
-          selectCheck: "Debe seleccionar un nombre válido"
+          required: "Debe seleccionar un nombre válido",
         },
         cantidad: {
           required: "El campo Cantidad es obligatorio",
-          digits: "El campo Cantidad debe ser un número entero"
+          number: "El campo Cantidad debe contener números"
         },
-        'image-bodega': {
-          required: "Debe seleccionar una imagen"
-        }
       },
       errorClass: "error-text", // Clase CSS para los mensajes de error
     });

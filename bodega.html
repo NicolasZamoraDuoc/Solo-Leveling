@@ -23,7 +23,7 @@
                 <div class="mb-3 fw-bold">
                   <label for="id" class="form-label titulos_2">Categoría</label>
                   <select class="form-select registro_color" style="color:black"  id="categoria" name="categoria">
-                    <option value="1">Ninguno</option>
+                    <option value="" selected>Seleccione una categoría</option>
                     <option value="2">MOBA</option>
                     <option value="3">Acción</option>
                     <option value="4">Arcade</option>
@@ -32,23 +32,20 @@
                     <option value="7">Musical</option>
                     <option value="8">De mesa</option>
                 </select>
-                  <div class="invalid-feedback">Debe llenar el campo Categoria</div>
                 </div>
                 <div class="mb-3 fw-bold">
                   <label for="id" class="form-label titulos_2">Nombre</label>
                   <select class="form-select registro_color" style="color:black" id="nombre" name="nombre">
-                    <option value="1">Sin nombre</option>
+                    <option value="" selected>Seleccione un nombre</option>
                     <option value="2">LOL</option>
                     <option value="3">Diablo lll</option>
                     <option value="4">Los sims 4</option>
                     <option value="5">Fifa</option>
                 </select>
-                  <div class="invalid-feedback">Debe llenar el campo Nombre</div>
                 </div>
                 <div class="mb-3 fw-bold">
                   <label for="id" class="form-label titulos_2">Cantidad</label>
-                  <input type="text" class="form-control registro_color" id="cantidad" name="cantidad" placeholder="ej: 5" required>
-                  <div class="invalid-feedback">Debe llenar el campo Cantidad</div>
+                  <input type="text" class="form-control registro_color" id="cantidad" name="cantidad" placeholder="ej: 5">
                 </div>
               </div>
               <!--Foto de perfil-->
@@ -60,11 +57,6 @@
                             <br><br>
                           </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <input type="file" id="upload-image image-bodega" name="image-bodega" class="form-control boton_buscar_anonimo_2 required">
-                        </td>
-                    </tr>
                 </table>
             </div>
             &nbsp;
@@ -72,6 +64,7 @@
               <button type="update" class="btn boton_buscar_anonimo_2">Guardar</button>
               <button type="new" class="btn boton_buscar_anonimo_2" >Nuevo</button>
               <button type="delete" class="btn boton_buscar_anonimo_2" >Eliminar</button>
+              <button id="id_btnLimpiar" type="reset" class="btn boton_buscar_anonimo_2" >Limpiar</button>
             </div>
             </div>
           </div>

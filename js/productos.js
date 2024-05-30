@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+  $.validator.addMethod("soloLetras", function(value, element) {
+  
+    return this.optional(element) || /^[a-zA-Z\s]*$/.test(value);
+
+  }, "Sólo se permiten letras y espacios en blanco.");
 
       // Validar formulario con JQuery
     $("#productos").validate({
@@ -7,39 +12,36 @@ $(document).ready(function() {
 
         id: {
             required: true,
-                digits: true,
-                minlength: 1,
-                maxlength: 5,
-            
+            number: true,
+            minlength: 1,
+            maxlength: 5,
           },
-
-        
+        categoria:{
+            required:true,
+          },
         nombres: {
             required: true,
-            pattern: /^[A-Za-záéíóúÁÉÍÓÚñÑ\s]+$/, // Acepta letras, espacios y letras con acentos y ñ
+            soloLetras:true,
         },
         descripcion: {
             required: true,
-            pattern: /^[A-Za-záéíóúÁÉÍÓÚñÑ\s]+$/, // Acepta letras, espacios y letras con acentos y ñ
         },        
         precio: {
-          required: true,
-          digits: true,
-            minlength: 1,
-            maxlength: 9,
-          
+            required: true,
+            number: true,
+            min: 0,
         },
         descuento_subscriptor: {
             required: true,
-            digits: true,
-            minlength: 1,
-            maxlength: 3,
+            number: true,
+            min:0,
+            max: 100,
         },
         descuento_oferta: {
             required: true,
-            digits: true,
-            minlength: 1,
-            maxlength: 3,
+            number: true,
+            min:0,
+            max: 100,
         },
         
       }, // --> Fin de reglas
@@ -47,36 +49,32 @@ $(document).ready(function() {
 
         id: {
             required: "El ID es un campo requerido",
-            digits: "Sólo digitos",
-
+            number: "Sólo numeros",
           },
-
+        categoria: {
+            required: "Debe seleccionar una categoría válida",
+          },
         nombres: {
-          required: "El nombre es un campo requerido",
-          soloLetras: "El nombre sólo puede contener letras y espacios en blanco",
+            required: "El nombre es un campo requerido",
+            soloLetras: "El nombre sólo puede contener letras y espacios en blanco",
         },
         descripcion: {
             required: "La descripción es un campo requerido",
-            soloLetras: "La descripción sólo puede contener letras y espacios en blanco",
         },
         precio: {
-          required: "El precio es un campo requerido",
-          digits: "Sólo digitos",
-          
+            required: "El precio es un campo requerido",
+            number: "Sólo numeros",
         },
         descuento_subscriptor:{ 
             required: "El descuento subscriptor es un campo requerido", 
-            digits: "Sólo digitos",
-            maxlength:"El descuento máximo % 100.",
+            number: "Sólo numeros",
+            max:"El descuento máximo es de 100%",
         },
         descuento_oferta: {
             required: "El descuento por oferta es un campo requerido",
-            digits: "Sólo digitos",
-            maxlength:"El descuento máximo % 100.",
+            number: "Sólo numeros",
+            max:"El descuento máximo es de 100%",
         },
-        
-
-
       }, // --> Fin de mensajes
       errorClass: "error-text", // Clase CSS para los mensajes de error
     });

@@ -61,11 +61,11 @@ $(document).ready(function() {
         },
         nombres: {
             required: true,
-            pattern: /^[A-Za-záéíóúÁÉÍÓÚñÑ\s]+$/, // Acepta letras, espacios y letras con acentos y ñ
+            soloLetras:true,
         },
         apellidos: {
             required: true,
-            pattern: /^[A-Za-záéíóúÁÉÍÓÚñÑ\s]+$/, // Acepta letras, espacios y letras con acentos y ñ
+            soloLetras:true,
         },        
         correo: {
           required: true,
@@ -73,7 +73,6 @@ $(document).ready(function() {
         },
         direccion: {
             required: true,
-            rows:3,
         },
         password: {
           required: true,

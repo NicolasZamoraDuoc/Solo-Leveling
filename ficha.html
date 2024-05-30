@@ -13,30 +13,29 @@
     <div id="menu_anonimo"></div>
     <br>
     <!-- Contenido principal de la pagina -->
-    <h1 style="margin-left: 150px;">Ficha del producto</h1>
+    <h1 class="text-center titulos" style="margin-left: 150px;">Ficha del producto</h1>
     <br>
     <div class="card mb-3 body mx-auto pt-2 index_foto_fondo" style="max-width: 1200px;">
       <div class="row g-0">
           <!-- Columna para la imagen -->
-          <div class="col-md-4">
+          <div class="col-md-4 p-4">
+            <br>
               <img src="img/producto1.jpg" class="img-fluid rounded-start foto_ficha" alt="...">
           </div>
           <!-- Columna para el contenido -->
           <div class="col-md-8">
               <div class="card-body">
-                  <span class="titulo_producto_ficha letra_blanca">LOL</span>
+                  <span class="titulo_producto_ficha titulos_2">LOL</span>
                   <br>
-                  <span class="oferta_en_ficha">EN OFERTA 15% DE DESCUENTO</span>
+                  <span class="precio_oferta_subscrito index_oferta">EN OFERTA 15% DE DESCUENTO</span>
                   <br>
                   <div class="precio_oferta_subscrito letra_blanca">
-                      Precio: $25.000
-                      <br>
-                      Oferta: <span class="text-success">$21.250</span>
-                      <br>
-                      Subscrito: <span class="text-danger">$20.000</span>
+                    <div > Precio: <span class="precio_oferta_subscrito index_precio">$25.000 </span></div>
+                    <div >Oferta: <span class="index_oferta">$21.250</span></div>
+                    <div >Subscrito: <span class="precio_oferta_subscrito index_subscrito">$20.000</span></div>
                   </div>
                   <br>
-                  <div class="descripcion_ficha letra_blanca">
+                  <div class="descripcion_ficha titulos_2">
                       Descripción:
                       <br>
                       Juego en línea donde dos equipos de cinco jugadores luchan para 
@@ -45,7 +44,7 @@
                       Ganar requiere estrategia, coordinación y habilidad individual.
                   </div>
                   <br>
-                  <div class="descripcion_ficha letra_blanca">
+                  <div class="descripcion_ficha index_stock">
                       En stock: 20 unidades
                   </div>
               </div>
@@ -55,8 +54,8 @@
   
     <div class="d-flex justify-content-end" style="margin-right: 140px;">
       <div class="btn-group">
-          <button class="btn boton-pag-registrarse" type="reset" style="background-color: #a3a5c3;" >Comprar ahora</button>
-          <a class="btn boton-pag-registrarse" style="background-color:#7073a3;" href="carrito.html">Agregar al carrito</a>
+          <button class="btn btn-primary index_btn_comprar" type="reset" style="right: 20px ;">Comprar ahora</button>
+          <a class="btn btn-primary index_btn_comprar" style="right: 20px ;" href="carrito.html">Agregar al carrito</a>
       </div>
     </div>
 

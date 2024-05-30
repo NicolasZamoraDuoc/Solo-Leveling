@@ -67,3 +67,8 @@ document.getElementById('upload-image').addEventListener('change', function() {
     }, false)
   }())
 
+  /*----para limpiar los formularios -----*/
+  document.getElementById('id_btnLimpiar').addEventListener('click', function() {
+    document.getElementById('miFormulario').reset();
+});
+

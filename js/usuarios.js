@@ -58,21 +58,25 @@ $(document).ready(function() {
 
         id: {
             required: true,
+            number:true,
             minlength: 2,
             maxlength: 15,
           },
 
         rut: {
           required: true,
-          rutChileno: true
+          rutChileno: true,
+        },
+        tipo: {
+          required: true,
         },
         nombres: {
             required: true,
-            pattern: /^[A-Za-záéíóúÁÉÍÓÚñÑ\s]+$/, // Acepta letras, espacios y letras con acentos y ñ
+            soloLetras: true,
         },
         apellidos: {
             required: true,
-            pattern: /^[A-Za-záéíóúÁÉÍÓÚñÑ\s]+$/, // Acepta letras, espacios y letras con acentos y ñ
+            soloLetras: true,
         },        
         correo: {
           required: true,
@@ -80,7 +84,6 @@ $(document).ready(function() {
         },
         direccion: {
             required: true,
-            rows:3,
         },
         password: {
           required: true,
@@ -92,12 +95,16 @@ $(document).ready(function() {
 
         id: {
           required: "El ID es un campo requerido",
-          minlength: "Ingrese minimo 2 carácteres"
+          number:"Solo debe contener numeros",
+          minlength: "Ingrese minimo 2 carácteres",
         },
         
         rut: {
           required: "El RUT es un campo requerido",
           rutChileno: "El RUT no es válido (escriba sin puntos y con guión)"
+        },
+        tipo: {
+          required: "Por favor seleccione un tipo (cliente o usuario)",
         },
         nombres: {
           required: "El nombre es un campo requerido",
@@ -120,10 +127,14 @@ $(document).ready(function() {
           maxlength: "La contraseña debe tener un máximo de 15 caracteres",
         },
       }, // --> Fin de mensajes
+      errorPlacement: function(error, element) {
+        if (element.attr("name") == "tipo") {
+          error.appendTo("#tipo-error");
+        } else {
+          error.insertAfter(element);
+        }
+      },
       errorClass: "error-text", // Clase CSS para los mensajes de error
     });
-
-    
-    
-  });
+});
   
