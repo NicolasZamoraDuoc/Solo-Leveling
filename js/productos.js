@@ -12,7 +12,8 @@ $(document).ready(function() {
 
         id: {
             required: true,
-            number: true,
+            /**falta poner number en vez de digito**/
+            digit: true,
             minlength: 1,
             maxlength: 5,
           },
@@ -21,27 +22,32 @@ $(document).ready(function() {
           },
         nombres: {
             required: true,
-            soloLetras:true,
+            /**falta sololetras**/
         },
         descripcion: {
             required: true,
         },        
         precio: {
             required: true,
-            number: true,
+            digit:true,
+            /**falta poner number en vez de digito**/
             min: 0,
         },
         descuento_subscriptor: {
             required: true,
-            number: true,
-            min:0,
-            max: 100,
+            digit: true,
+            /**falta poner number en vez de digito**/
+            /**poner solo min y max, sin lenght**/
+            minlength:0,
+            maxlength: 100,
         },
         descuento_oferta: {
             required: true,
-            number: true,
-            min:0,
-            max: 100,
+            digit: true,
+            /**falta poner number en vez de digito**/
+            /**poner solo min y max, sin lenght**/
+            minlength:0,
+            maxlength: 100,
         },
         
       }, // --> Fin de reglas
@@ -49,7 +55,7 @@ $(document).ready(function() {
 
         id: {
             required: "El ID es un campo requerido",
-            number: "Sólo numeros",
+            /**poner mensaje de solo numeros**/
           },
         categoria: {
             required: "Debe seleccionar una categoría válida",
@@ -63,16 +69,16 @@ $(document).ready(function() {
         },
         precio: {
             required: "El precio es un campo requerido",
-            number: "Sólo numeros",
+            /**poner mensaje de solo numeros**/
         },
         descuento_subscriptor:{ 
             required: "El descuento subscriptor es un campo requerido", 
-            number: "Sólo numeros",
+            /**poner mensaje de solo numeros**/
             max:"El descuento máximo es de 100%",
         },
         descuento_oferta: {
             required: "El descuento por oferta es un campo requerido",
-            number: "Sólo numeros",
+            /**poner mensaje de solo numeros**/
             max:"El descuento máximo es de 100%",
         },
       }, // --> Fin de mensajes

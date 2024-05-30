@@ -29,7 +29,8 @@ $(document).ready(function() {
         },
         cantidad: {
           required: true,
-          number: true
+          /**falta poner number en vez de digito**/
+          digit: true,
         },
       },
       messages: {
@@ -41,7 +42,7 @@ $(document).ready(function() {
         },
         cantidad: {
           required: "El campo Cantidad es obligatorio",
-          number: "El campo Cantidad debe contener números"
+          /**poner mensaje de solo numeros**/
         },
       },
       errorClass: "error-text", // Clase CSS para los mensajes de error
