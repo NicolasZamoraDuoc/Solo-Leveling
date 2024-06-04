@@ -12,8 +12,7 @@ $(document).ready(function() {
 
         id: {
             required: true,
-            /**falta poner number en vez de digito**/
-            digit: true,
+            number: true,
             minlength: 1,
             maxlength: 5,
           },
@@ -21,41 +20,37 @@ $(document).ready(function() {
             required:true,
           },
         nombres: {
-            required: true,
-            /**falta sololetras**/
+          required: true,
+          soloLetras: true,
         },
         descripcion: {
             required: true,
         },        
         precio: {
             required: true,
-            digit:true,
-            /**falta poner number en vez de digito**/
+            number:true,
             min: 0,
         },
         descuento_subscriptor: {
-            required: true,
-            digit: true,
-            /**falta poner number en vez de digito**/
-            /**poner solo min y max, sin lenght**/
-            minlength:0,
-            maxlength: 100,
-        },
+          required: true,
+          number: true, 
+          min: 0, 
+          max: 100 
+      },
         descuento_oferta: {
             required: true,
-            digit: true,
-            /**falta poner number en vez de digito**/
-            /**poner solo min y max, sin lenght**/
-            minlength:0,
-            maxlength: 100,
+            number: true,
+            min:0,
+            max: 100,
         },
         
       }, // --> Fin de reglas
       messages: {
 
         id: {
-            required: "El ID es un campo requerido",
-            /**poner mensaje de solo numeros**/
+          required: "El ID es un campo requerido",
+          number:"Solo debe contener numeros",
+          minlength: "Ingrese minimo 2 carácteres",
           },
         categoria: {
             required: "Debe seleccionar una categoría válida",
@@ -69,17 +64,21 @@ $(document).ready(function() {
         },
         precio: {
             required: "El precio es un campo requerido",
-            /**poner mensaje de solo numeros**/
+            number:"Solo debe contener numeros",
+            minlength: "Ingrese minimo 2 carácteres",
         },
-        descuento_subscriptor:{ 
-            required: "El descuento subscriptor es un campo requerido", 
-            /**poner mensaje de solo numeros**/
-            max:"El descuento máximo es de 100%",
-        },
+        descuento_subscriptor: {
+          required: "El descuento subscriptor es un campo requerido",
+          number: "Por favor, introduce solo números", 
+          min: "El descuento mínimo es 0%",
+          max: "El descuento máximo es de 100%"
+      }
+      ,
         descuento_oferta: {
             required: "El descuento por oferta es un campo requerido",
-            /**poner mensaje de solo numeros**/
-            max:"El descuento máximo es de 100%",
+            number: "Por favor, introduce solo números", 
+            min: "El descuento mínimo es 0%",
+            max: "El descuento máximo es de 100%"
         },
       }, // --> Fin de mensajes
       errorClass: "error-text", // Clase CSS para los mensajes de error

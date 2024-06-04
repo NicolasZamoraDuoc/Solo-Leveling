@@ -29,8 +29,8 @@ $(document).ready(function() {
         },
         cantidad: {
           required: true,
-          /**falta poner number en vez de digito**/
-          digit: true,
+          number: true,
+          min:1,
         },
       },
       messages: {
@@ -41,8 +41,9 @@ $(document).ready(function() {
           required: "Debe seleccionar un nombre válido",
         },
         cantidad: {
-          required: "El campo Cantidad es obligatorio",
-          /**poner mensaje de solo numeros**/
+          required: "La cantidad es un campo requerido",
+          number: "Por favor, introduce solo números", 
+          min: "La cantidad debe ser mayor que cero",
         },
       },
       errorClass: "error-text", // Clase CSS para los mensajes de error
