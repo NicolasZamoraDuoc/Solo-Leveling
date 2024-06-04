@@ -13,7 +13,7 @@ $(document).ready(function() {
         id: {
             required: true,
             number: true,
-            minlength: 1,
+            minlength: 2,
             maxlength: 5,
           },
         categoria:{
@@ -51,6 +51,7 @@ $(document).ready(function() {
           required: "El ID es un campo requerido",
           number:"Solo debe contener numeros",
           minlength: "Ingrese minimo 2 carácteres",
+          maxlength: "Ingrese minimo 5 carácteres",
           },
         categoria: {
             required: "Debe seleccionar una categoría válida",
@@ -65,7 +66,6 @@ $(document).ready(function() {
         precio: {
             required: "El precio es un campo requerido",
             number:"Solo debe contener numeros",
-            minlength: "Ingrese minimo 2 carácteres",
         },
         descuento_subscriptor: {
           required: "El descuento subscriptor es un campo requerido",

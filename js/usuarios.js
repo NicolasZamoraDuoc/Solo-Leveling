@@ -97,6 +97,7 @@ $(document).ready(function() {
           required: "El ID es un campo requerido",
           number:"Solo debe contener numeros",
           minlength: "Ingrese minimo 2 carácteres",
+          maxlength: "Debe tener un máximo de 15 caracteres",
         },
         
         rut: {
