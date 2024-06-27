@@ -49,6 +49,9 @@ $(document).ready(function() {
       errorClass: "error-text", // Clase CSS para los mensajes de error
     });
   });
+  $('#btnNuevo').click(function() {
+    location.reload();
+  });
   
   
   
