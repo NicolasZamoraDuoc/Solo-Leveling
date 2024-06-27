@@ -15,7 +15,7 @@
       <div class="container">
         <h1 class="titulos" style="margin: 25px;">Mantenedor de Bodega</h1>
         <br>
-        <div class="col-sm-12 col-md-6">
+        
         <section>
           <form id="bodega">
             <div class="row">
@@ -45,33 +45,22 @@
                 </div>
                 
                  <!-- Cantidad -->
-                 <div class="mb-3 fw-bold">
-                  <label for="cantidad" class="form-label titulos_2">Cantidad</label>
-                  <input class="form-control registro_color" id="cantidad" name="cantidad" placeholder="Ej: 5" >
+                 <div class="mb-3 fw-bold ">
+                  <label  for="cantidad" class="form-label titulos_2">Cantidad</label>
+                  <input type="number" class="form-control registro_color" id="cantidad" name="cantidad" placeholder="Ej: 5" >
                 </div>
               </div>
               <!--Foto de perfil-->
-              <div class="col-sm-12 col-md-6">
-                <table>
-                    <tr>
-                        <td>
-                            <img id="user-image-preview image-bodega" src="img/producto1.jpg" alt="" class="user-image" style="max-width: 300px; margin-left: auto;">
-                            <br><br>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            
-   
-                </table>
+              <div class="col-sm-12 col-md-6 justify-content-center"">
+                <img id="user-image-preview image-bodega" src="img/producto1.jpg" alt="" class="user-image" style="max-width: 300px; margin-left: 100px;">
+              </div>
             </div>
             &nbsp;
             <div class="btn-group" style="width: 20px;">
-              <button type="update" class="btn boton_buscar_anonimo_2">Guardar</button>
-              <button id="btnNuevo" type="button" class="btn boton_buscar_anonimo_2">Nuevo</button>
+              <button type="submit" class="btn boton_buscar_anonimo_2">Guardar</button>
+              <button id="reset" type="button" class="btn boton_buscar_anonimo_2">Nuevo</button>
               <button id="btnNuevo" type="button" class="btn boton_buscar_anonimo_2">Eliminar</button>
               <button id="id_btnLimpiar" type="reset" class="btn boton_buscar_anonimo_2" >Limpiar</button>
-            </div>
             </div>
           </div>
         </form>

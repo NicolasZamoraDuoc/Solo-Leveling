@@ -21,7 +21,6 @@ $(document).ready(function() {
           },
         nombres: {
           required: true,
-          soloLetras: true,
         },
         descripcion: {
             required: true,
@@ -58,7 +57,6 @@ $(document).ready(function() {
           },
         nombres: {
             required: "El nombre es un campo requerido",
-            soloLetras: "El nombre sólo puede contener letras y espacios en blanco",
         },
         descripcion: {
             required: "La descripción es un campo requerido",
@@ -66,6 +64,7 @@ $(document).ready(function() {
         precio: {
             required: "El precio es un campo requerido",
             number:"Solo debe contener numeros",
+            min:"El precio debe ser mayor o igual a 0",
         },
         descuento_subscriptor: {
           required: "El descuento subscriptor es un campo requerido",
